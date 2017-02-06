@@ -1,11 +1,7 @@
-/*
- * Start Bootstrap - Logo Nav (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
- *{
-  box-sizing: border-box;
+* {
+  -webkit-box-sizing: border-box; /* Android ≤ 2.3, iOS ≤ 4 */
+     -moz-box-sizing: border-box; /* Firefox ≤ 28 */
+          box-sizing: border-box; /* Chrome, Firefox 29+, IE 8+, Opera, Safari 5.1 */
 }
 
 body {
@@ -19,14 +15,16 @@ img {
   height: auto;
 }
 
+/******************* Header styles *****************************/
 
-/******************* Content Styles start **********************/
+.header-container .navbar-brand {
+  display: flex;
+  align-items: center;
+}
 
 /******************* Content Styles start **********************/
 
 .content{
-  display: -webkit-flex; /* Safari */
-    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
     display: flex;
     flex-wrap: wrap;
 }
@@ -50,19 +48,18 @@ img {
 .small-image1, .small-image2{
   padding: 5px;
   display: inline;
+
 }
 
 .featured-image{
-  height: : 100%;
+  height: 100%;
   margin: 0;
   padding-top: 20px;
-  padding-left: 0px;
-  /*padding-right: 15px;*/
+  padding-left: 25px;
 }
 
 
-
-/************* Choose Program styles start ************/
+/************* Choose Program styles ************/
 .courseHeading{
   text-align: center;
   margin-top: 50px;
@@ -89,7 +86,7 @@ h5,
 }
 
 
-/************* Table styles start ****************/
+/************* Table styles ****************/
 .tableHeading{
   text-align: center;
   margin-top: 50px;
@@ -123,36 +120,18 @@ th{
   margin-bottom: 50px;
 }
 
+/*************Footer styles******************/
 
 footer{
   text-align: center;
   margin-bottom: 30px;
-}
-
-
-.header-container .navbar-brand {
-  display: flex;
-  align-items: center;
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-      .courses{
-      margin-bottom: 50px;
-
-    }
-
-    .col-md-3:not(:first-child) {
-    margin-left: 0;
-    }
-
-    .main-list{
-      flex-wrap: nowrap;
-    }
+  font-weight: 700;
+  color: #A9A9A9;
 
 }
 
+
+/**************Media Query for medium size devices **************/
 
 @media(max-width: 991px){
     table, .tableHeading, .featured-image, .studystatement{
@@ -170,11 +149,14 @@ footer{
     .col-md-3:not(:first-child) {
     margin-left: 0;
 }
+    .main-list{
+      flex-wrap: nowrap;
+    }
 
 }
 
 @media (min-width: 441px) and (max-width: 638px) {
-    .container{
+    .container, .header-container{
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -206,11 +188,21 @@ footer{
 
 }
 
+/************************ For smaller devices (ex. iphone 5)***************/
 @media(max-width: 440px){
   .navbar-brand img{
     width: 80px;
     height: 40px;
   }
+
+   .courses{
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+      .col-md-3:not(:first-child) {
+    margin-left: 20px;
+}
 
     .courseHeading{
     margin-top: 20px;
@@ -219,8 +211,19 @@ footer{
 
     .content-image{
       padding-top: 10px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+    }
+    .content-title{
+      padding-left:0;
     }
 
+    .main-list{
+      padding-bottom: 5px;
+    }
+    .small-image1, .small-image2{
+      padding-top: 2px;
+    }
 
   h2{
     font-size: 20px;
@@ -242,7 +245,33 @@ footer{
   }
 
   body{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media(min-width: 749px){
+    body{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/********** Custom media query for landscape orientation of devices like ipad ******/
+
+@media(min-width: 749px) and (orientation: landscape){
+    body{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-list{
+    padding-right: 0;
+    padding-bottom: 10px;
+    font-size: 1.1em;
+
+  }
+  .content-image{
+    padding-bottom: 10px;
   }
 }
