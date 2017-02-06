@@ -10,9 +10,9 @@
     <meta name="author" content="">
     <title>Online Drivers Ed</title>
     <!-- Bootstrap Core CSS -->
-    <link defer href="css/bootstrap.min.css" rel="stylesheet">
+    <link async href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link defer href="css/styles.css" rel="stylesheet">
+    <link async href="css/styles.css" rel="stylesheet">
 
 </head>
 
@@ -167,6 +167,21 @@
     </div>
     <!-- /.container -->
 
+<script type="text/javascript">
+    var resource = document.createElement('link');
+  resource.setAttribute("rel", "stylesheet");
+  resource.setAttribute("href","path/to/styles.css");
+  resource.setAttribute("type","text/css");
+  var head = document.getElementsByTagName('head')[0];
+  head.appendChild(resource);
+
+  var resource1 = document.createElement('link');
+  resource1.setAttribute("rel", "stylesheet");
+  resource1.setAttribute("href","path/to/bootstrap.min.css");
+  resource1.setAttribute("type","text/css");
+  var head1 = document.getElementsByTagName('head1')[0];
+  head1.appendChild(resource);
+</script>
     <!-- jQuery -->
     <script defer src="js/jquery-3.1.0.min.js"></script>
 
