@@ -1,0 +1,248 @@
+/*
+ * Start Bootstrap - Logo Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ *{
+  box-sizing: border-box;
+}
+
+body {
+    padding-top: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/******************* Content Styles start **********************/
+
+/******************* Content Styles start **********************/
+
+.content{
+  display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-image{
+  padding: 20px;
+}
+
+.content-title{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-list{
+  padding-top: 10px;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  font-size: 1.3em;
+}
+
+.small-image1, .small-image2{
+  padding: 5px;
+  display: inline;
+}
+
+.featured-image{
+  height: : 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 0px;
+  /*padding-right: 15px;*/
+}
+
+
+
+/************* Choose Program styles start ************/
+.courseHeading{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+h4,
+h5,
+.info{
+  text-align: center;
+  /*margin-top: 40px;*/
+}
+
+.info{
+  margin-top: 10px;
+}
+
+.col-md-3:not(:first-child) {
+    margin-left: 12%;
+}
+
+.col-md-3{
+  border:1px solid black
+}
+
+
+/************* Table styles start ****************/
+.tableHeading{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+table, th, td{
+  border: 1px solid black;
+}
+
+table{
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0 ;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2
+}
+
+th{
+  background-color: #A9A9A9;
+}
+
+.studystatement{
+  margin-bottom: 50px;
+}
+
+
+footer{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.header-container .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+      .courses{
+      margin-bottom: 50px;
+
+    }
+
+    .col-md-3:not(:first-child) {
+    margin-left: 0;
+    }
+
+    .main-list{
+      flex-wrap: nowrap;
+    }
+
+}
+
+
+@media(max-width: 991px){
+    table, .tableHeading, .featured-image, .studystatement{
+      display: none;
+    }
+
+    .content-image, .content-title{
+      display: inline;
+    }
+
+    .courses{
+      margin-bottom: 50px;
+
+    }
+    .col-md-3:not(:first-child) {
+    margin-left: 0;
+}
+
+}
+
+@media (min-width: 441px) and (max-width: 638px) {
+    .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+    .navbar-brand img{
+    width: 100px;
+    height: 50px;
+  }
+   h2{
+    font-size: 20px;
+  }
+
+  h3{
+    font-size: 15px;
+  }
+
+  h4, h5{
+    font-size: 10px;
+  }
+  li{
+    font-size: 13px;
+  }
+  .courseHeading{
+    margin-top: 20px;
+  margin-bottom: 20px;
+  }
+.btn{
+    font-size: 12px;
+  }
+
+}
+
+@media(max-width: 440px){
+  .navbar-brand img{
+    width: 80px;
+    height: 40px;
+  }
+
+    .courseHeading{
+    margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+    .content-image{
+      padding-top: 10px;
+    }
+
+
+  h2{
+    font-size: 20px;
+  }
+
+  h3{
+    font-size: 15px;
+  }
+
+  h4, h5{
+    font-size: 10px;
+  }
+  li{
+    font-size: 13px;
+  }
+
+  .btn{
+    font-size: 10px;
+  }
+
+  body{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
