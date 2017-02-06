@@ -36,13 +36,10 @@ img {
     padding: 20px;
 }
 .content-title {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 }
 .main-list {
-    padding-top: 10px;
-    padding-left: 35px;
-    padding-bottom: 20px;
+    padding: 10px 0 20px 35px;
     font-size: 1.3em;
 }
 .small-image1,
@@ -51,17 +48,14 @@ img {
     display: inline;
 }
 .featured-image {
-    height: 100%;
-    margin: 0;
-    padding-top: 20px;
-    padding-left: 30px;
+    margin: 0 ;
+    padding: 20px 0 40px 30px;
 }
 /************* Choose Program styles ************/
 
-.courseHeading {
+.courseHeading, .tableHeading  {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin: 50px 0 40px 0;
 }
 h4,
 h5,
@@ -80,21 +74,15 @@ h5,
 }
 /************* Table styles ****************/
 
-.tableHeading {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
 table,
 th,
 td {
     border: 1px solid black;
 }
 table {
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0 20px 0;
 }
+
 th,
 td {
     padding: 10px;
@@ -123,6 +111,7 @@ footer {
     table, .tableHeading, .featured-image, .studystatement {
         display: none;
     }
+
     .content-image,
     .content-title {
         display: inline;
@@ -140,8 +129,7 @@ footer {
 @media (min-width: 441px) and (max-width: 638px) {
     .container,
     .header-container {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 0 30px 0 30px;
     }
     .navbar-brand img {
         width: 100px;
@@ -161,8 +149,7 @@ footer {
         font-size: 13px;
     }
     .courseHeading {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 0 20px 0;
     }
     .btn {
         font-size: 12px;
@@ -176,20 +163,16 @@ footer {
         height: 40px;
     }
     .courses {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 0 20px 0 20px;
     }
     .col-md-3:not(:first-child) {
         margin-left: 20px;
     }
     .courseHeading {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 0 20px 0;
     }
     .content-image {
-        padding-top: 10px;
-        padding-right: 5px;
-        padding-bottom: 5px;
+        padding: 10px 5px 5px;
     }
     .content-title {
         padding-left: 0;
@@ -218,16 +201,17 @@ footer {
         font-size: 10px;
     }
     body {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0 ;
     }
 }
 @media(min-width: 749px) {
     body {
+        padding: 0;
         padding-left: 0;
         padding-right: 0;
     }
 }
+
 /********** Custom media query for landscape orientation of devices like ipad ******/
 
 @media(min-width: 749px) and (orientation: landscape) {
