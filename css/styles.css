@@ -163,16 +163,20 @@ footer {
         height: 40px;
     }
     .courses {
-        margin: 0 20px 0 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .col-md-3:not(:first-child) {
         margin-left: 20px;
     }
     .courseHeading {
-        margin: 20px 0 20px 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .content-image {
-        padding: 10px 5px 5px;
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-bottom: 5px;
     }
     .content-title {
         padding-left: 0;
@@ -201,7 +205,8 @@ footer {
         font-size: 10px;
     }
     body {
-        padding: 0 ;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 @media(min-width: 749px) {
